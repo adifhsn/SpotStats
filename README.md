@@ -23,7 +23,7 @@ A Python CLI tool that uses the Spotify API to display your top artists, tracks,
 
 **Option 1 — Clone the repository:**
 ```bash
-git clone https://github.com/your-username/SpotStats.git
+git clone https://github.com/adifhsn/SpotStats.git
 cd SpotStats
 ```
 
