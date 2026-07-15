@@ -68,3 +68,9 @@ Follow the on-screen prompts to select your desired time range and stat category
 
 - **Python**
 - **[Spotipy](https://spotipy.readthedocs.io/)** — lightweight Spotify Web API wrapper
+
+---
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
