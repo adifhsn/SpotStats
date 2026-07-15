@@ -23,7 +23,7 @@ A Python CLI tool that uses the Spotify API to display your top artists, tracks,
 
 **Option 1 — Clone the repository:**
 ```bash
-git clone https://github.com/your-username/SpotStats.git
+git clone https://github.com/adifhsn/SpotStats.git
 cd SpotStats
 ```
 
@@ -31,7 +31,7 @@ cd SpotStats
 
 **Install dependencies:**
 ```bash
-pip install spotipy
+pip install spotipy python-dotenv
 ```
 
 ---
@@ -39,9 +39,18 @@ pip install spotipy
 ## Setup
 
 1. Go to the [Spotify Developer Dashboard](https://developer.spotify.com/dashboard) and create an app to get your **Client ID** and **Client Secret**.
-2. In the project directory, open the credentials file and enter your Client ID and Client Secret.
+2. In your app settings on the dashboard, click **Edit Settings** and add the following as a Redirect URI:
+   ```
+   http://127.0.0.1:8888/callback
+   ```
+   Save the settings.
+3. In the project directory, create a new file named **`.env`** and add your credentials like this:
+   ```
+   SPOTIFY_CLIENT_ID=your_client_id_here
+   SPOTIFY_CLIENT_SECRET=your_client_secret_here
+   ```
 
-> **Never share your Client Secret publicly or commit it to GitHub.**
+> **Never share your Client Secret publicly or commit your `.env` file to GitHub.** This project's `.gitignore` is already set up to keep `.env` out of version control.
 
 ---
 
@@ -59,9 +68,3 @@ Follow the on-screen prompts to select your desired time range and stat category
 
 - **Python**
 - **[Spotipy](https://spotipy.readthedocs.io/)** — lightweight Spotify Web API wrapper
-
----
-
-## License
-
-This project is open source and available under the [MIT License](LICENSE).
