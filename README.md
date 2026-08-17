@@ -44,7 +44,7 @@ pip install spotipy python-dotenv
    http://127.0.0.1:8888/callback
    ```
    Save the settings.
-3. In the project directory, create a new file named **`.env`** and add your credentials like this:
+3. In the project directory, rename `.env.example` to **`.env`**, then fill in your credentials:
    ```
    SPOTIFY_CLIENT_ID=your_client_id_here
    SPOTIFY_CLIENT_SECRET=your_client_secret_here
